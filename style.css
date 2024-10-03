@@ -1,0 +1,86 @@
+body {
+    display: grid;
+    place-content: center;
+
+    height: 100vh;
+    background-color: #f5f5f5;
+
+}
+
+.calculator {
+    height: 460px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+
+.screen {
+    height: 60px;
+    width: 330px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-size: 32px;
+    padding: 10px;
+    text-align: right;
+    background-color: #ccf;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    background-color: #56beff;
+    margin: 10px 5px 5px 10px;
+    border: none;
+    height: 60px;
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #5d3b63;
+}
+
+.clear {
+    grid-column: span 2;
+    background-color: #61cbbb;
+}
+
+.zero {
+    display: grid;
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+    background-color: #d61579;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.screen {
+    font-size: 24px;
+    line-height: 1.5;
+}
